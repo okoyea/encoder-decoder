@@ -1,0 +1,22 @@
+h1 {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+.frame {
+  text-align: center;
+}
+
+.inputBox {
+  border-style: solid;
+  border-width: 1px;
+  padding: 2.5%;
+  text-align: left;
+}
+
+.result {
+  display: none;
+  color: blue;
+  text-align: center;
+  font-size: 24pt;
+}
