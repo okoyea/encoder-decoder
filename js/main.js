@@ -1,10 +1,26 @@
-$(document).ready(function() {
+require.config({
+    paths: {
+      'jquery': '../bower_components/jquery/dist/jquery.min'
+    },
+    shim: {
+      'jquery': {
+          exports: '$'
+      }
+    }
+});
+
+require(['factory','encoder','decoder','validator','jquery'], function(Factory, Encoder, Decoder, Validator, $){
   $('form#getInput').submit(function(event) {
-    var converter = new Converter();
+
+    var factory = new Factory();
+    var validator = new Validator();
+    var result;
+
     var procedure =  $("input:radio[name=procedure]:checked").val();
     var val = $("input#converterInput").val();
-    var authHash = converter.validateInput(val, procedure);
-    var result;
+
+    var authHash = validator.validateInput(val, procedure);
+    var converter = factory.createConverter(procedure);
 
     if (authHash['valid']) {
       if (procedure ==='encode') {
@@ -15,7 +31,7 @@ $(document).ready(function() {
         result = converter.decode(hi,lo);
 
         // very important - second check to see if result integer is in range
-        authHash = converter.validateInput(result);
+        authHash = validator.validateInput(result);
       }
 
       $('#result').text(authHash['error'] ? authHash['error'] : result);
