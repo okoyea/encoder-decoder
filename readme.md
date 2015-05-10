@@ -5,3 +5,7 @@ This small app can take a signed integer and encode it by converting it into a 4
 ## Tests
 
 A minimal mocha test suite is included in the spec folder.
+
+## Dependencies
+
+Installed dependencies with 'npm install' & 'bower install'
