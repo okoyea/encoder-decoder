@@ -1,0 +1,15 @@
+{
+  "name": "encoder-decoder",
+  "version": "0.0.0",
+  "homepage": "https://github.com/okoyea/encoder-decoder",
+  "authors": [
+    "O'Koyea Huff-Boone <okoyeahb@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "mocha": "~2.2.4",
+    "chai": "~2.3.0",
+    "bootstrap": "~3.3.4"
+  }
+}

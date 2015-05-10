@@ -1,0 +1,22 @@
+{
+  "name": "encoder-decoder",
+  "version": "1.0.0",
+  "description": "This small app can take a signed integer and encode it by converting it into a 4-bit hex code. It can also decode a 4-bit hex code by converting it into an integer.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okoyea/encoder-decoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okoyea/encoder-decoder/issues"
+  },
+  "homepage": "https://github.com/okoyea/encoder-decoder",
+  "dependencies": {
+    "requirejs": "^2.1.17"
+  },
+  "devDependencies": {}
+}
