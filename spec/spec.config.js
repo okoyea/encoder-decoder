@@ -1,9 +1,9 @@
 require.config({
   paths: {
-    'factory'        : '../js/factory',
-    'decoder'        : '../js/decoder',
-    'encoder'        : '../js/encoder',
-    'validator'        : '../js/validator'
+    'factory'   : '../js/factory',
+    'decoder'   : '../js/decoder',
+    'encoder'   : '../js/encoder',
+    'validator' : '../js/validator'
   }
 });
 
