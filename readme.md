@@ -8,4 +8,4 @@ A minimal mocha test suite is included in the spec folder.
 
 ## Dependencies
 
-Installed dependencies with 'npm install' & 'bower install'
+Installed dependencies with `npm install` & `bower install`
